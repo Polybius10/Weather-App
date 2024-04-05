@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="city-name" id="cityName"></h2>
+                <div class="today-temp">
+                    <p class="high-temp">High</p> <p class="low-temp">Low</p>
+                </div>
+                <span class="today-name--day" id="todayName"></span>
+                <span class="tomorrow-day--name" id="tomorrowName">Tomorrow</span>
+            </nav>
+            <h1 class="temperature" id="temperature"></h1>
+    </header>
+    <main class="container">
+        <section class="forecast" id="forecast">
+            <!-- Crear el row de el clima en las proximas 12 horas -->
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+            <div class="forecast-container">
+                <p class="hour">1AM</p>
+                <img src="" alt="icon">
+                <p class="weather-number">25</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <input type="search" name="search" id="searchInput" class="search-input" placeholder="Find your city">
+            <button class="search-submit" id="searchSubmit">
+        </section>
+
+        <section class="main-tables">
+        <article class="future-forecast">
+            <table class="future-forecast--table">
+                <tr class="table-today">
+                    <th class="table-title--one">miercoles</th>
+                    <td class="table-icon--one"><img alt="image"></td>
+                    <th class="table-h-temp--one">27°</th>
+                    <td class="table-l-temp--one">19°</td>
+                </tr>
+                <tr class="table-today">
+                    <th class="table-title--two">jueves</th>
+                    <td class="table-icon--two"><img alt="image"></td>
+                    <th class="table-h-temp--two">27°</th>
+                    <td class="table-l-temp--two">19°</td>
+                </tr>
+                <tr class="table-today">
+                    <th class="table-title--three">viernes</th>
+                    <td class="table-icon--three"><img alt="image"></td>
+                    <th class="table-h-temp--three">27°</th>
+                    <td class="table-l-temp-three">19°</td>
+                </tr>
+                <tr class="table-today">
+                    <th class="table-title--four">sabado</th>
+                    <td class="table-icon--four"><img alt="image"></td>
+                    <th class="table-h-temp--four">27°</th>
+                    <td class="table-l-temp--four">19°</td>
+                </tr>
+                <tr class="table-today">
+                    <th class="table-title--five">domingo</th>
+                    <td class="table-icon--five"><img alt="image"></td>
+                    <th class="table-h-temp--five">27°</th>
+                    <td class="table-l-temp--five">19°</td>
+                </tr>
+            </table>
+        </article>
+
+        <article class="data-section">
+            <table class="data-table">
+                <tr>
+                    <th>Sunrice:</th>
+                    <td id="sunrise"></td>
+                </tr>
+                <tr>
+                    <th>Sunset:</th>
+                    <td id="sunset"></td>
+                </tr>
+                <tr>
+                    <th>Chance of rain:</th>
+                    <td id="rainChance"></td>
+                </tr>
+                <tr>
+                    <th>Humidity:</th>
+                    <td id="humidity"></td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td id="wind"></td>
+                </tr>
+            </table>
+        </article>
+        </section>
+
+        <section class="quality-section">
+            <article class="air-quality">
+                <p class="air-quality--title">AIR QUALITY</p>
+                <h3 class="air-quality--value">67 - Moderate</h3>
+                <!-- Inserte barra aqui -->
+                <div class="air-quality--barra">
+                    <div class="progreso" id="progreso"></div>
+                </div>
+                <p>Air quality for <span id="airQualityName"></span></p>
+                <p>More data from the Weather Channel.</p>
+            </article>
+            <article class="uv-section">
+                <h3>UV INDEX</h3>
+                <h2 class="uv-nummber">4.0</h2>
+                <p>Moderate</p>
+                <!-- Inserte otra barra aquí -->
+            </article>
+        </section>
+    </main>
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="apikey.js"></script> -->
+<script type="module" src="index.js"></script> 
+<script type="module" src="forecast.js"></script>
+</body>
+</html>
